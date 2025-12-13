@@ -9,18 +9,6 @@
   "routes": [
     {
       "src": "/api/(.*)",
-  cat > vercel.json << 'EOF'
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/bot.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
       "dest": "api/bot.py"
     },
     {
